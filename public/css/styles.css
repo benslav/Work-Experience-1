@@ -812,7 +812,6 @@ img {
   .hero-inner {
     display: flex;
     flex-direction: column-reverse;
-    outline: 1px solid red;
   }
 
   .hero-media {
