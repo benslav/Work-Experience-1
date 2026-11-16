@@ -854,16 +854,6 @@ img {
     font-size: 34px;
   }
 
-  .hero-inner {
-    display: flex;
-    flex-direction: column-reverse;
-    outline: 1px solid red;
-  }
-
-  .hero-media {
-    max-width: 100%;
-  }
-
   .playbook-grid {
     display: flex;
     flex-direction: column;
