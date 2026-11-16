@@ -15,6 +15,9 @@
     <div class="container">
       <a class="logo" href="index.html"><span class="logo-mark"></span>Calico Media</a>
       <nav aria-label="Main">
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
         <ul class="nav-links">
           <li><a href="features.html">Features</a></li>
           <li><a href="pricing.html">Pricing</a></li>
@@ -188,5 +191,13 @@
       </div>
     </div>
   </footer>
+  <script>
+    const btn = document.querySelector('.hamburger');
+    const links = document.querySelector('.nav-links');
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
