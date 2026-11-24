@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
   }
 }
