@@ -228,6 +228,24 @@ img {
   padding: 10px 20px;
 }
 
+.site-header--home .hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.site-header--home .hamburger span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--white);
+}
+
 /* Home hero */
 
 .hero {
@@ -746,6 +764,42 @@ img {
   padding-top: 24px;
 }
 
+@media (max-width: 1024px) {
+  .site-header--home .container {
+    position: relative;
+  }
+
+  .site-header--home .hamburger {
+    display: flex;
+  }
+
+  .site-header--home .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 24px;
+    background: var(--ink);
+  }
+
+  .site-header--home .nav-links.open {
+    display: flex;
+  }
+
+  .site-header--home .nav-links a {
+    padding: 0;
+  }
+
+  .site-header--home .nav-links .btn {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -753,6 +807,15 @@ img {
 
   h2 {
     font-size: 30px;
+  }
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-media {
+    max-width: 100%;
   }
 
   .section {
@@ -784,8 +847,15 @@ img {
 }
 
 @media (max-width: 480px) {
+
+
   h1 {
     font-size: 34px;
+  }
+
+  .playbook-grid {
+    display: flex;
+    flex-direction: column;
   }
 
   .card-grid {
